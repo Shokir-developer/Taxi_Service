@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	
+
+<main class="page">
+        <section class="clean-block about-us">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Taxi xizmati</h2>
+                    <p>Quyidagi bo'limlar orqali o'zingizga mos taxi turini tanlang.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                            <a href="{% url 'damas_chilar' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/damas1.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">Damas(1000so'm/km)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                        	 <a href="{% url 'nexia_chilar' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/nexia2.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">Nexia(1500so'm/km)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                        	 <a href="{% url 'gentra_chilar' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/gentra.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">Gentra(2000so'm/km)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

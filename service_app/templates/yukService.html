@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	
+
+<main class="page">
+        <section class="clean-block about-us">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Yuk tashish xizmati</h2>
+                    <p>Quyidagi bo'limlar orqali o'zingizga mos yuk avtomobili turini tanlang.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                            <a href="{% url 'yuk_buyurtma' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/labo.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">Labo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                        	 <a href="{% url 'yuk_buyurtma' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/zil.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">KAMAZ(zil)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                        	 <a href="{% url 'yuk_buyurtma' %}"><img alt="Card image cap" class="card-img-top img-fluid" src="{% static 'images/man.jpg' %}" /></a>
+                            <div class="card-body info">
+                                <h4 class="card-title">MAN</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

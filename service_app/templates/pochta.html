@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	
+
+<main class="page">
+<div class="container">
+  <h2>Pochta buyurtmasi </h2>
+
+  <form method="POST">
+    {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label" for="name">Buyurtmachi ismi</label>
+            {{form.ism}}
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="name">Buyurtmachi familyasi</label>
+            {{form.familya}}
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="name">Buyurtmachi nomeri</label>
+            {{form.nomer}}
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="name">Qaysi viloyatga</label>
+            {{form.viloyat}}
+        </div>
+
+		<div class="mb-3">
+            <label class="form-label" for="name">Qaysi tumanga</label>
+            {{form.tuman}}
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="name">Manzil</label>
+            {{form.manzil}}
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="name">Yetib borish sanasi</label>
+            {{form.yetib_borish_sana}}
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Tasdiqlash</button>
+        </div>
+                   
+  </form>
+</div>
+</main>
+
+{% endblock %}

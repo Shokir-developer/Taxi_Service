@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<style>
+
+.bgimg-1 {
+  background-image: url("{% static 'images/taxi.jpg' %}");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("{% static 'images/truck.png' %}");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("{% static 'images/postman.jpg' %}");
+  min-height: 400px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><a href="{% url 'taxi_service' %}">TAXI XIZMATI</a></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Sirdaryo avto xizmatlar</h3>
+  <p>Sirdaryo avto xizmatlari korxonasi 10 yidan beri o'z mijozlariga sifatli xizmat ko'rsatib keladi. Mana 10 yildirkim xalq orasida sifat borasida ishonchini kamaytirmay xizmat ko'rsatib kelmoqda.
+  Bizning korxona doim mizjozlar uchun qayg'uradi va doim o'z vaqtida xizmat ko'rsatadi. Endi bizda faqat taxi xizmati emas, yuk yetkazib berish va pochta xizmatlari ham qo'shildi. Marhamat kerakli xizmatni tanlang. Siz buyurtma bering, qolganini bizga qo'yib bering! Topshirilgan buyumlar, pochtalarga to'liqligicha ma'muriyat javob beradi. Agar buyurtma siz hohlagan vaqtda yetib bormasa yoki yo'qolgan taqdirda to'lovingiz qaytariladi va yo'qolgan buyum to'ldirib beriladi. 
+
+</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href="{% url 'yuk_tashish_service' %}">YUK TASHISH XIZMATI</a></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p><a href="{% url 'yuk_tashish_service' %}">Yuk tashish xizmati bo'limiga o'ting va xizmatdan foydalaning</a></p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href="{% url 'pochta_service' %}">POCHTA XIZMATI</a></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p><a href="{% url 'pochta_service' %}">Pochta yetkazib berish xizmati bo'limiga o'ting va xizmatdan foydalaning</a></p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><a href="{% url 'contact_us' %}">ALOQA</a></span>
+  </div>
+</div>
+
+</body>
+</html>
