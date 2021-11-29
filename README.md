@@ -1,2 +1,3 @@
 # Taxi_Service
-Taxi xizmatlari web sayti
+login:    taxi.uz
+password: taxiuz010298
